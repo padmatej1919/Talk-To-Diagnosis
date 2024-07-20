@@ -1,0 +1,45 @@
+#scroll-container {
+  font-size: xx-large;
+  overflow: hidden;
+  white-space: nowrap; 
+  width: 100%;
+  position: relative;
+  background-color: #f0f0f0; 
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#scroll-text {
+  display: inline-block;
+  animation: my-animation 15s linear infinite; 
+  white-space: nowrap; 
+  font-weight: bold;
+  color: #333; 
+}
+
+@keyframes my-animation {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+@media (min-width: 768px) {
+  #scroll-container {
+      font-size: x-large;
+  }
+}
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+  #scroll-container {
+      font-size: large;
+  }
+}
+
+@media (max-width: 480px) {
+  #scroll-container {
+      font-size: medium;
+  }
+}

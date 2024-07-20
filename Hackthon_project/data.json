@@ -1,0 +1,38 @@
+[{
+    "PatientID":1,
+    "Age":45,
+    "Gender":"Male",
+    "MedicalHistory":"Hypertension, Type 2 Diabetes, Hyperlipidemia",
+    "GeneticMarkers":"BRCA1: Negative, BRCA2: Positive",
+    "LifestyleFactors":"Smoker: No, Alcohol: Moderate, Diet: High Fat",
+    "CurrentMedications":"Metformin, Lisinopril, Atorvastatin",
+    "RecommendedTreatmentPlan":"Low-Carb Diet, Exercise Plan, Statins, BRCA2-targeted therapy"
+},
+{
+    "PatientID":2,
+    "Age":30,
+    "Gender":"Female",
+    "MedicalHistory":"Asthma, Hypothyroidism",
+    "GeneticMarkers":"BRCA1: Negative, BRCA2: Negative",
+    "LifestyleFactors":"Smoker: Yes, Alcohol: Low, Diet: Balanced",
+    "CurrentMedications":"Levothyroxine",
+    "RecommendedTreatmentPlan":"Smoking Cessation Program, Inhaled Corticosteroids"
+},
+{
+    "PatientID":3,
+    "Age":50,
+    "Gender":"Male",
+    "MedicalHistory":"Coronary Artery Disease, Osteoarthritis",
+    "GeneticMarkers":"APOE4: Positive, MTHFR: Negative",
+    "LifestyleFactors":"Smoker: No, Alcohol: High, Diet: Mediterranean",
+    "CurrentMedications":"Aspirin, Atorvastatin",
+    "RecommendedTreatmentPlan":"Mediterranean Diet, Physical Therapy for Joints, Cardioprotective drugs"
+},
+{
+    "PatientID":4,
+    "Age":40,
+    "Gender":"Female",
+    "MedicalHistory":"Breast Cancer, PCOS",
+    "GeneticMarkers":"BRCA1: Positive, BRCA2: Negative",
+    "LifestyleFactors":"Smoker: No, Alcohol: Moderate, Diet: High Sugar",
+    "CurrentMedications":"Tamoxifen, Metformin","RecommendedTreatmentPlan":"Low-Sugar Diet, Regular Screening, Hormone Therapy"},{"PatientID":5,"Age":60,"Gender":"Male","MedicalHistory":"Chronic Kidney Disease, Hypertension","GeneticMarkers":"HLA-B27: Positive, APOE4: Negative","LifestyleFactors":"Smoker: No, Alcohol: Low, Diet: Low Sodium","CurrentMedications":"Lisinopril, Furosemide","RecommendedTreatmentPlan":"Low-Sodium Diet, Dialysis, Anti-inflammatory drugs"},{"PatientID":6,"Age":35,"Gender":"Female","MedicalHistory":"Rheumatoid Arthritis, Anemia","GeneticMarkers":"HLA-DRB1: Positive, BRCA1: Negative","LifestyleFactors":"Smoker: No, Alcohol: Moderate, Diet: Vegetarian","CurrentMedications":"Methotrexate, Iron Supplements","RecommendedTreatmentPlan":"Anti-inflammatory Diet, Physical Therapy, Iron-rich foods"},{"PatientID":7,"Age":28,"Gender":"Male","MedicalHistory":"Type 1 Diabetes, Celiac Disease","GeneticMarkers":"HLA-DQ2: Positive, HLA-DQ8: Positive","LifestyleFactors":"Smoker: No, Alcohol: Low, Diet: Gluten-Free","CurrentMedications":"Insulin, Vitamin D","RecommendedTreatmentPlan":"Gluten-Free Diet, Blood Sugar Monitoring, Vitamin D Supplements"},{"PatientID":8,"Age":55,"Gender":"Female","MedicalHistory":"Hypertension, Osteoporosis","GeneticMarkers":"MTHFR: Positive, BRCA1: Negative","LifestyleFactors":"Smoker: No, Alcohol: Moderate, Diet: Low Calcium","CurrentMedications":"Alendronate, Amlodipine","RecommendedTreatmentPlan":"Calcium-Rich Diet, Bone Density Exercises, Antihypertensive drugs"},{"PatientID":9,"Age":47,"Gender":"Male","MedicalHistory":"COPD, Chronic Bronchitis","GeneticMarkers":"A1AT: Deficient, CFTR: Negative","LifestyleFactors":"Smoker: Yes, Alcohol: Moderate, Diet: Balanced","CurrentMedications":"Bronchodilators, Corticosteroids","RecommendedTreatmentPlan":"Smoking Cessation, Pulmonary Rehab, Anti-inflammatory drugs"},{"PatientID":10,"Age":38,"Gender":"Female","MedicalHistory":"Depression, Anxiety","GeneticMarkers":"COMT: Positive, MAOA: Positive","LifestyleFactors":"Smoker: No, Alcohol: Low, Diet: Balanced","CurrentMedications":"SSRIs, Benzodiazepines","RecommendedTreatmentPlan":"Cognitive Behavioral Therapy, Meditation, Regular Exercise"},{"PatientID":11,"Age":42,"Gender":"Male","MedicalHistory":"Hypertension, Hyperlipidemia","GeneticMarkers":"BRCA1: Negative, BRCA2: Negative","LifestyleFactors":"Smoker: Yes, Alcohol: Moderate, Diet: High Sodium","CurrentMedications":"Lisinopril, Atorvastatin","RecommendedTreatmentPlan":"Low-Sodium Diet, Statins, Exercise Plan"},{"PatientID":12,"Age":33,"Gender":"Female","MedicalHistory":"Thyroid Cancer, Hypothyroidism","GeneticMarkers":"BRCA1: Positive, BRCA2: Positive","LifestyleFactors":"Smoker: No, Alcohol: Low, Diet: High Protein","CurrentMedications":"Levothyroxine, Chemotherapy","RecommendedTreatmentPlan":"High-Protein Diet, Thyroid Hormone Therapy, Regular Screening"},{"PatientID":13,"Age":29,"Gender":"Male","MedicalHistory":"Type 1 Diabetes, Asthma","GeneticMarkers":"HLA-DQ2: Positive, HLA-DQ8: Positive","LifestyleFactors":"Smoker: No, Alcohol: Low, Diet: Balanced","CurrentMedications":"Insulin, Inhalers","RecommendedTreatmentPlan":"Blood Sugar Monitoring, Asthma Management Plan, Balanced Diet"},{"PatientID":14,"Age":50,"Gender":"Female","MedicalHistory":"Breast Cancer, Osteoarthritis","GeneticMarkers":"BRCA1: Positive, BRCA2: Positive","LifestyleFactors":"Smoker: No, Alcohol: Moderate, Diet: High Fat","CurrentMedications":"Tamoxifen, Pain Relievers","RecommendedTreatmentPlan":"Low-Fat Diet, Regular Screening, Physical Therapy"},{"PatientID":15,"Age":37,"Gender":"Male","MedicalHistory":"Hypertension, Type 2 Diabetes","GeneticMarkers":"BRCA1: Negative, BRCA2: Negative","LifestyleFactors":"Smoker: No, Alcohol: Low, Diet: High Sugar","CurrentMedications":"Metformin, Lisinopril","RecommendedTreatmentPlan":"Low-Sugar Diet, Blood Sugar Monitoring, Antihypertensive drugs"},{"PatientID":16,"Age":55,"Gender":"Female","MedicalHistory":"Coronary Artery Disease, Osteoporosis","GeneticMarkers":"APOE4: Positive, MTHFR: Positive","LifestyleFactors":"Smoker: No, Alcohol: Moderate, Diet: Low Calcium","CurrentMedications":"Aspirin, Calcium Supplements","RecommendedTreatmentPlan":"Calcium-Rich Diet, Bone Density Exercises, Cardioprotective drugs"},{"PatientID":17,"Age":44,"Gender":"Male","MedicalHistory":"Chronic Kidney Disease, Anemia","GeneticMarkers":"HLA-B27: Positive, APOE4: Negative","LifestyleFactors":"Smoker: No, Alcohol: Moderate, Diet: Low Sodium","CurrentMedications":"Iron Supplements, Lisinopril","RecommendedTreatmentPlan":"Low-Sodium Diet, Iron-Rich Foods, Antihypertensive drugs"},{"PatientID":18,"Age":39,"Gender":"Female","MedicalHistory":"Rheumatoid Arthritis, Hyperlipidemia","GeneticMarkers":"HLA-DRB1: Positive, BRCA1: Negative","LifestyleFactors":"Smoker: No, Alcohol: Moderate, Diet: High Fat","CurrentMedications":"Methotrexate, Statins","RecommendedTreatmentPlan":"Low-Fat Diet, Anti-inflammatory Diet, Physical Therapy"},{"PatientID":19,"Age":48,"Gender":"Male","MedicalHistory":"COPD, Type 2 Diabetes","GeneticMarkers":"A1AT: Deficient, CFTR: Negative","LifestyleFactors":"Smoker: Yes, Alcohol: Moderate, Diet: High Sugar","CurrentMedications":"Bronchodilators, Metformin","RecommendedTreatmentPlan":"Smoking Cessation, Pulmonary Rehab, Blood Sugar Monitoring"},{"PatientID":20,"Age":31,"Gender":"Female","MedicalHistory":"Depression, PCOS","GeneticMarkers":"COMT: Positive, MAOA: Positive","LifestyleFactors":"Smoker: No, Alcohol: Low, Diet: High Sugar","CurrentMedications":"SSRIs, Hormone Therapy","RecommendedTreatmentPlan":"Low-Sugar Diet, Cognitive Behavioral Therapy, Regular Exercise"}]

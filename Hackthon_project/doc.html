@@ -1,0 +1,192 @@
+<!-- patient_info.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #navlist {
+            background-color: green;
+            overflow: hidden;
+            padding: 10px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #navlist a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        #navlist a:hover {
+            background-color: darkgreen;
+            color: white;
+        }
+       .search {
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+       .search input[type="text"] {
+            padding: 6px;
+            margin-right: 10px;
+            border: none;
+            font-size: 17px;
+            border-radius: 4px;
+        }
+       .search button {
+            padding: 6px 10px;
+            background: white;
+            color: green;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+       .search button i {
+            font-size: 18px;
+        }
+       .search button:hover {
+            background: darkgreen;
+            color: white;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navlist">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="./upload.html" class="button">upload</a>
+        <div class="search">
+            <input type="text" id="patientID" placeholder="Enter Patient ID">
+            <button type="button" onclick="searchPatient()">Search</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Patient Information</h2>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>PatientID</th>
+                    <th>Age</th>
+                    <th>MedicalHistory</th>
+                    <th>GeneticsMakers</th>
+                    <th>LifestyleFactors</th>
+                    <th>CurrentMedications</th>
+                    <th>RecommendedTreatmentPlan</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        let patientData = [];
+
+async function fetchData() {
+    try {
+        const response = await fetch('data.json');
+        patientData = await response.json();
+        const tableBody = document.getElementById('table-body');
+
+        patientData.forEach(item => {
+            const row = `
+                <tr>
+                <td>${item.PatientID}</td>
+                <td>${item.Age}</td>
+                <td>${item.MedicalHistory}</td>
+                <td>${item.GeneticsMakers}</td>
+                <td>${item.LifestyleFactors}</td>
+                <td>${item.CurrentMedications}</td>
+                <td>${item.RecommendedTreatmentPlan}</td>
+                </tr>
+            `;
+            tableBody.innerHTML += row;
+        });
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}
+
+window.addEventListener('load', fetchData);
+
+function searchPatient() {
+    const patientID = document.getElementById('patientID').value.trim();
+    const patient = patientData.find(p => p.PatientID === parseInt(patientID));
+
+    if (patient) {
+        const tableBody = document.getElementById('table-body');
+        tableBody.innerHTML = '';
+        const row = `
+            <tr>
+            <td>${patient.PatientID}</td>
+            <td>${patient.Age}</td>
+            <td>${patient.MedicalHistory}</td>
+            <td>${patient.GeneticsMakers}</td>
+            <td>${patient.LifestyleFactors}</td>
+            <td>${patient.CurrentMedications}</td>
+            <td>${patient.RecommendedTreatmentPlan}</td>
+            </tr>
+        `;
+        tableBody.innerHTML = row;
+    } else {
+        alert('Patient not found');
+    }
+}
+const uploadButton = document.getElementById('upload-button');
+  let dataset = []; // Initialize an empty dataset
+
+  uploadButton.addEventListener('click', () => {
+    try {
+      const patientId = parseInt(document.getElementById('patient-id').value);
+      const age = parseInt(document.getElementById('age').value);
+      if (isNaN(patientId) || isNaN(age)) {
+        alert("Please enter valid patient ID and age.");
+        return;
+      }
+
+      const newPatientData = {
+        "PatientID": patientId,
+        "Age": age,
+        "Gender": document.getElementById('gender').value,
+        "MedicalHistory": document.getElementById('medical-history').value,
+        "GeneticMarkers": document.getElementById('genetic-markers').value,
+        "LifestyleFactors": document.getElementById('lifestyle-factors').value,
+        "CurrentMedications": document.getElementById('current-medications').value,
+        "RecommendedTreatmentPlan": document.getElementById('recommended-treatment-plan').value
+      };
+
+      dataset.push(newPatientData); 
+
+      console.log("Dataset:", dataset);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  });
+    </script>
+</body>
+</html>

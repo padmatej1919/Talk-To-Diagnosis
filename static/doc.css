@@ -1,0 +1,143 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the hero section */
+.hero.is-primary {
+    background-color: #00d1b2; /* Primary color for the hero section */
+    color: white;
+}
+
+/* Styling for the scrolling container */
+#scroll-container {
+    font-size: large;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background-color: #00d1b2; /* Background color of the container */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for container */
+}
+
+/* Styling for the scrolling text */
+#scroll-text {
+    display: inline-block;
+    animation: scroll-left 15s linear infinite;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #ffffff; /* Text color for scrolling text */
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Styling for the form container */
+form.container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Styling for the form fields */
+.field {
+    margin-bottom: 15px;
+}
+
+/* Styling for the form input fields */
+.input {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Styling for the buttons */
+.button {
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Primary button color */
+.button.is-primary {
+    background-color: #00d1b2;
+    border-color: #00d1b2;
+    color: white;
+}
+
+.button.is-primary:hover {
+    background-color: #00b89c;
+    border-color: #00b89c;
+}
+
+/* Danger button color */
+.button.is-danger {
+    background-color: #ff3860;
+    border-color: #ff3860;
+    color: white;
+}
+
+.button.is-danger:hover {
+    background-color: #ff233c;
+    border-color: #ff233c;
+}
+
+/* Styling for the success/error message */
+#message {
+    display: none;
+    margin: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Success message color */
+#message.success {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+/* Error message color */
+#message.error {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+/* Media Queries for responsive design */
+
+/* For screens larger than 768px */
+@media (min-width: 768px) {
+    #scroll-container {
+        font-size: x-large;
+    }
+}
+
+/* For screens between 480px and 768px */
+@media (min-width: 480px) and (max-width: 768px) {
+    #scroll-container {
+        font-size: large;
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+    #scroll-container {
+        font-size: medium;
+    }
+}
